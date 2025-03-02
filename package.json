@@ -1,0 +1,83 @@
+{
+  "name": "{{PROJECT_NAME}}",
+  "version": "0.0.1",
+  "description": "{{SHORT_DESCRIPTION}}",
+  "main": "dist/index.js",
+  "bin": {
+    "{{PROJECT_NAME}}": "dist/cli.js"
+  },
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "cli": "tsc && node dist/cli.js",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "build": "webpack",
+    "type-check": "tsc --noEmit",
+    "watch": "tsc -w",
+    "clean": "rimraf dist",
+    "dev": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whjelmar/{{PROJECT_NAME}}.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whjelmar/{{PROJECT_NAME}}/issues"
+  },
+  "homepage": "https://github.com/whjelmar/{{PROJECT_NAME}}#readme",
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-typescript": "*",
+    "babel-loader": "*",
+    "cypress": "*",
+    "eslint": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-prettier": "*",
+    "figlet": "*",
+    "husky": "*",
+    "jest": "*",
+    "jsdoc": "*",
+    "lint-staged": "*",
+    "ora": "*",
+    "prettier": "*",
+    "rimraf": "*",
+    "ts-loader": "*",
+    "ts-jest": "*",
+    "typescript": "*",
+    "webpack": "*",
+    "webpack-cli": "*"
+  },
+  "dependencies": {
+    "commander": "*",
+    "cosmiconfig": "*",
+    "electron": "*",
+    "path-browserify": "*",
+    "@cabinjs/logger": "*",
+    "cabin": "*",
+    "pino": "*",
+    "@opentelemetry/api": "*",
+    "@opentelemetry/node": "*",
+    "@opentelemetry/tracing": "*",
+    "@opentelemetry/exporter-jaeger": "*"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+# ADR 0003: Logging Framework
+
+## Status
+Accepted
+
+## Context
+Effective logging is essential for monitoring and debugging applications. Selecting a robust logging framework helps ensure that logs are consistent, comprehensive, and useful for diagnosing issues.
+
+## Decision
+Use Cabin.js as our primary logging framework.
+
+## Decision Made
+{{CURRENT_DATE}} by {{AUTHOR}}
+
+## Consequences
+Cabin.js provides a robust and flexible logging solution that supports structured logging, automatic PII masking, and integration with various transports. This framework helps maintain consistent logging practices across the project and enhances security by masking sensitive information.
+
+## Other Solutions Considered
+
+### Winston
+**Pros**:
+- Highly flexible and configurable.
+- Supports multiple transports.
+
+**Cons**:
+- Requires more configuration to set up structured logging and PII masking.
+
+### Pino
+**Pros**:
+- Very fast and lightweight.
+- Supports structured logging out of the box.
+
+**Cons**:
+- Less feature-rich compared to Cabin.js.
+- Requires additional setup for PII masking.
