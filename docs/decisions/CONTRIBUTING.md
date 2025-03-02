@@ -1,6 +1,6 @@
-# Contributing to {{PROJECT_NAME}}
+# Contributing to meeting-vault
 
-Thank you for considering contributing to {{PROJECT_NAME}}! We welcome contributions from everyone. By participating in this project, you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md).
+Thank you for considering contributing to meeting-vault! We welcome contributions from everyone. By participating in this project, you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## How to Contribute
 
@@ -23,10 +23,10 @@ Thank you for considering contributing to {{PROJECT_NAME}}! We welcome contribut
 
 To get started with the project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/username/{{PROJECT_NAME}}.git`
+1. Clone the repository: `git clone https://github.com/username/meeting-vault.git`
 2. Install dependencies: `npm install`
 3. Run the development server: `npm start`
 
 ## Reporting Issues
 
-If you encounter any issues, please report them [here](https://github.com/whjelmar/{{PROJECT_NAME}}/issues). Provide as much detail as possible.
+If you encounter any issues, please report them [here](https://github.com/whjelmar/meeting-vault/issues). Provide as much detail as possible.

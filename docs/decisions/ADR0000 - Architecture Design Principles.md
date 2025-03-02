@@ -31,7 +31,7 @@ Architecture Design Principles guide the decision-making process, ensuring consi
 11. **Financial Sustainability and Competitiveness**: Make decisions that balance immediate needs with long-term financial sustainability, ensuring competitiveness in the market.
 
 ## Decision Made
-{{CURRENT_DATE}} by {{AUTHOR}}
+2025-03-01 by Walter Hjelmar
 
 ## Consequences
 By adhering to these principles, we lay a strong foundation for architectural decisions. They serve as a compass, ensuring that choices align with the project's long-term vision and goals.

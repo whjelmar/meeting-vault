@@ -42,13 +42,13 @@ replace_placeholders() {
   local authorEmail=$9
 
   sed -i.bak \
-      -e "s/{{PROJECT_NAME}}/$projectName/g" \
-      -e "s/{{SHORT_DESCRIPTION}}/$shortDescription/g" \
+      -e "s/meeting-vault/$projectName/g" \
+      -e "s/Pulls events into your knowledge system with meetings sent directly to your Obsidian vault/$shortDescription/g" \
       -e "s/{{LONG_DESCRIPTION}}/$longDescription/g" \
-      -e "s/{{CURRENT_DATE}}/$currentDate/g" \
+      -e "s/2025-03-01/$currentDate/g" \
       -e "s/{{TIMESTAMP}}/$timestamp/g" \
-      -e "s/{{CURRENT_YEAR}}/$currentYear/g" \
-      -e "s/{{AUTHOR}}/$author/g" \
+      -e "s/2025/$currentYear/g" \
+      -e "s/Walter Hjelmar/$author/g" \
       -e "s/{{AUTHOR_EMAIL}}/$authorEmail/g" \
       $filePath
 

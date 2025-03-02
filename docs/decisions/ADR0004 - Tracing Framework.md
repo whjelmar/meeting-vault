@@ -10,7 +10,7 @@ Distributed tracing is critical for understanding the flow of requests and diagn
 Use OpenTelemetry as our primary tracing framework.
 
 ## Decision Made
-{{CURRENT_DATE}} by {{AUTHOR}}
+2025-03-01 by Walter Hjelmar
 
 ## Consequences
 OpenTelemetry provides a comprehensive and standardized solution for distributed tracing. It supports various backends, including Jaeger and Zipkin, and integrates well with other observability tools. This framework ensures that we can capture and analyze trace data consistently across different services.

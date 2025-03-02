@@ -53,13 +53,13 @@ function Replace-Placeholders {
         [string]$authorEmail
     )
 
-    (Get-Content $filePath) -replace "{{PROJECT_NAME}}", $projectName `
-                            -replace "{{SHORT_DESCRIPTION}}", $shortDescription `
+    (Get-Content $filePath) -replace "meeting-vault", $projectName `
+                            -replace "Pulls events into your knowledge system with meetings sent directly to your Obsidian vault", $shortDescription `
                             -replace "{{LONG_DESCRIPTION}}", $longDescription `
-                            -replace "{{CURRENT_DATE}}", $currentDate `
+                            -replace "2025-03-01", $currentDate `
                             -replace "{{TIMESTAMP}}", $timestamp `
-                            -replace "{{CURRENT_YEAR}}", $currentYear `
-                            -replace "{{AUTHOR}}", $author `
+                            -replace "2025", $currentYear `
+                            -replace "Walter Hjelmar", $author `
                             -replace "{{AUTHOR_EMAIL}}", $authorEmail | Set-Content $filePath
 }
 

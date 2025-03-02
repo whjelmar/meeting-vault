@@ -1,7 +1,7 @@
 import { cosmiconfigSync } from 'cosmiconfig';
 import defaultConfig from './default';
 
-const moduleName = '{{PROJECT_NAME}}';
+const moduleName = 'meeting-vault';
 
 function loadConfig(cliOptions: any) {
   const explorer = cosmiconfigSync(moduleName);

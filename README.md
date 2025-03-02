@@ -1,8 +1,8 @@
-# {{PROJECT_NAME}}
+# meeting-vault
 
 ## Description
 
-{{SHORT_DESCRIPTION}}
+Pulls events into your knowledge system with meetings sent directly to your Obsidian vault
 
 ## Table of Contents
 
@@ -43,7 +43,7 @@ npm run build
 Then you can run the CLI using:
 
 ``` bash
-npx {{PROJECT_NAME}} --help
+npx meeting-vault --help
 ```
 
 This will show you the available commands and options for the CLI.
@@ -53,7 +53,7 @@ This will show you the available commands and options for the CLI.
 If you prefer not to display the Figlet banner, you can use the --no-banner option:
 
 ```bash
-npx {{PROJECT_NAME}} --no-banner
+npx meeting-vault --no-banner
 ```
 
 ### Enabling Debug Mode
@@ -63,7 +63,7 @@ The CLI supports a debug mode which provides more detailed logging information. 
 Example:
 
 ```bash
-npx {{PROJECT_NAME}} --debug
+npx meeting-vault --debug
 ```
 
 When debug mode is enabled, the application will log detailed debug information, including the running configuration and all registered plugins, to help with troubleshooting and development.
@@ -75,7 +75,7 @@ The CLI supports a verbose mode which provides more detailed output than usual b
 Example:
 
 ```bash
-npx {{PROJECT_NAME}} --verbose
+npx meeting-vault --verbose
 ```
 
 ### Suppressing Output
@@ -85,7 +85,7 @@ The CLI supports a quiet mode which suppresses all output except for errors. To 
 Example:
 
 ```bash
-npx {{PROJECT_NAME}} --quiet
+npx meeting-vault --quiet
 ```
 
 ### Dry Run Mode
@@ -95,7 +95,7 @@ The CLI supports a dry run mode which shows what would be done without actually 
 Example:
 
 ```bash
-npx {{PROJECT_NAME}} --dry-run
+npx meeting-vault --dry-run
 ```
 
 ### Forcing Actions
@@ -105,7 +105,7 @@ The CLI supports a force mode which bypasses confirmation prompts or overwrites 
 Example:
 
 ```bash
-npx {{PROJECT_NAME}} --force
+npx meeting-vault --force
 ```
 
 ## Using the GUI
@@ -160,11 +160,11 @@ By default, Cosmiconfig will check the current directory for the following:
 
 For this application, cosmiconfig will search up the directory tree for configuration in the following places:
 
-a {{PROJECT_NAME}} property in package.json
-a .{{PROJECT_NAME}} file in JSON or YAML format
-a .{{PROJECT_NAME}}.json, .{{PROJECT_NAME}}rc.yaml, .{{PROJECT_NAME}}rc.yml, .{{PROJECT_NAME}}rc.js, .{{PROJECT_NAME}}rc.ts, .{{PROJECT_NAME}}rc.mjs, or .{{PROJECT_NAME}}rc.cjs file
-a {{PROJECT_NAME}}rc, {{PROJECT_NAME}}rc.json, {{PROJECT_NAME}}rc.yaml, {{PROJECT_NAME}}rc.yml, {{PROJECT_NAME}}rc.js, {{PROJECT_NAME}}rc.ts, {{PROJECT_NAME}}rc.mjs, or {{PROJECT_NAME}}rc.cjs file inside a .config subdirectory
-a {{PROJECT_NAME}}.config.js, {{PROJECT_NAME}}.config.ts, {{PROJECT_NAME}}.config.mjs, or {{PROJECT_NAME}}.config.cjs file
+a meeting-vault property in package.json
+a .meeting-vault file in JSON or YAML format
+a .meeting-vault.json, .meeting-vaultrc.yaml, .meeting-vaultrc.yml, .meeting-vaultrc.js, .meeting-vaultrc.ts, .meeting-vaultrc.mjs, or .meeting-vaultrc.cjs file
+a meeting-vaultrc, meeting-vaultrc.json, meeting-vaultrc.yaml, meeting-vaultrc.yml, meeting-vaultrc.js, meeting-vaultrc.ts, meeting-vaultrc.mjs, or meeting-vaultrc.cjs file inside a .config subdirectory
+a meeting-vault.config.js, meeting-vault.config.ts, meeting-vault.config.mjs, or meeting-vault.config.cjs file
 Optionally, you can tell it to search up the directory tree using search strategies, checking each of these places in each directory, until it finds some acceptable configuration (or hits the home directory).
 
 ### Using a Custom Configuration File
@@ -173,7 +173,7 @@ You can specify a custom configuration file using the --config (or -c) option wh
 Example:
 
 ```bash
-npx {{PROJECT_NAME}} --config path/to/custom/config.json
+npx meeting-vault --config path/to/custom/config.json
 ```
 
 ### Default Configuration
@@ -198,7 +198,7 @@ const config = {
     }
   },
   tracing: {
-    serviceName: '{{PROJECT_NAME}}'
+    serviceName: 'meeting-vault'
   },
   inputFile: '',
   outputFile: '',
@@ -219,7 +219,7 @@ Example:
 import { cosmiconfigSync } from 'cosmiconfig';
 import defaultConfig from './default';
 
-const moduleName = '{{PROJECT_NAME}}';
+const moduleName = 'meeting-vault';
 const explorer = cosmiconfigSync(moduleName);
 
 const result = explorer.search();
@@ -370,7 +370,7 @@ console.log('Tracing initialized');
 
 ## Contributing
 
-Thank you for considering contributing to {{PROJECT_NAME}}! We welcome contributions from everyone. By participating in this project, you agree to abide by the [Code of Conduct](docs/COE_OF_CONUCT.md). See the [CONTRIBUTING](docs/CONTRIBUTING.md) for more information on how to get involved.
+Thank you for considering contributing to meeting-vault! We welcome contributions from everyone. By participating in this project, you agree to abide by the [Code of Conduct](docs/COE_OF_CONUCT.md). See the [CONTRIBUTING](docs/CONTRIBUTING.md) for more information on how to get involved.
 
 ## License
 
@@ -418,7 +418,7 @@ my-project/
 
 ### Plugin Framework
 
-{{PROJECT_NAME}} includes a plugin framework that allows for easy extension of the application's functionality. Plugins can register hooks to perform actions at different stages of the application lifecycle.
+meeting-vault includes a plugin framework that allows for easy extension of the application's functionality. Plugins can register hooks to perform actions at different stages of the application lifecycle.
 
 ### Hooks
 

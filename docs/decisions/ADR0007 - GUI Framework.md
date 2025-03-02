@@ -10,7 +10,7 @@ A graphical user interface (GUI) framework is crucial for building interactive d
 Use Electron as our primary GUI framework.
 
 ## Decision Made
-{{CURRENT_DATE}} by {{AUTHOR}}
+2025-03-01 by Walter Hjelmar
 
 ## Consequences
 Electron allows us to build cross-platform desktop applications using web technologies such as HTML, CSS, and JavaScript. It provides a robust set of APIs to interact with the native operating system, making it an ideal choice for building modern desktop applications.

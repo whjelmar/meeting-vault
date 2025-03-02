@@ -10,7 +10,7 @@ Managing configuration files effectively is crucial for maintaining flexibility 
 Use Cosmiconfig as our primary configuration file processing framework.
 
 ## Decision Made
-{{CURRENT_DATE}} by {{AUTHOR}}
+2025-03-01 by Walter Hjelmar
 
 ## Consequences
 Cosmiconfig provides a flexible and powerful solution for loading configuration files in various formats (JSON, YAML, JS, etc.). It supports hierarchical configuration and environment variable overrides, making it easy to manage configuration settings across different environments.

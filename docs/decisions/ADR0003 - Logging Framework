@@ -10,7 +10,7 @@ Effective logging is essential for monitoring and debugging applications. Select
 Use Cabin.js as our primary logging framework.
 
 ## Decision Made
-{{CURRENT_DATE}} by {{AUTHOR}}
+2025-03-01 by Walter Hjelmar
 
 ## Consequences
 Cabin.js provides a robust and flexible logging solution that supports structured logging, automatic PII masking, and integration with various transports. This framework helps maintain consistent logging practices across the project and enhances security by masking sensitive information.

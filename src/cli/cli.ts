@@ -13,7 +13,7 @@ const program = new Command();
 
 program
   .version('0.0.1')
-  .description('{{SHORT_DESCRIPTION}}')
+  .description('Pulls events into your knowledge system with meetings sent directly to your Obsidian vault')
   .option('-d, --debug', 'enable debug mode')
   .option('--verbose', 'enable verbose mode')
   .option('--quiet', 'suppress all output except errors')
@@ -68,7 +68,7 @@ setTimeout(() => {
   }
 
   if (options.banner && !options.quiet) {
-    console.log(figlet.textSync('{{PROJECT_NAME}}'));
+    console.log(figlet.textSync('meeting-vault'));
   }
 
   // Log a message

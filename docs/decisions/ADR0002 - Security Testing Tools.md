@@ -10,7 +10,7 @@ Ensuring the security of our application is paramount. A combination of tools is
 Utilize both OWASP ZAP (Zed Attack Proxy) for dynamic security testing and SonarQube for static code analysis and vulnerability detection.
 
 ## Decision Made
-{{CURRENT_DATE}} by {{AUTHOR}}
+2025-03-01 by Walter Hjelmar
 
 ## Consequences
 By combining ZAP and SonarQube, we cover both runtime vulnerabilities and static code vulnerabilities. This multi-layered approach enhances our security stance. Regular scans and code reviews will be essential to detect and address potential threats promptly.

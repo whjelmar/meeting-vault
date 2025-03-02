@@ -10,7 +10,7 @@ Unit tests ensure that individual units of source code function as expected. Sel
 Use Jest as our primary unit testing framework.
 
 ## Decision Made
-{{CURRENT_DATE}} by {{AUTHOR}}
+2025-03-01 by Walter Hjelmar
 
 ## Consequences
 Jest provides a comprehensive testing solution that works seamlessly with JavaScript environments. It comes with built-in assertions, mock functions, and offers snapshot testing.

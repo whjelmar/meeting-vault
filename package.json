@@ -1,10 +1,10 @@
 {
-  "name": "{{PROJECT_NAME}}",
+  "name": "meeting-vault",
   "version": "0.0.1",
-  "description": "{{SHORT_DESCRIPTION}}",
+  "description": "Pulls events into your knowledge system with meetings sent directly to your Obsidian vault",
   "main": "dist/index.js",
   "bin": {
-    "{{PROJECT_NAME}}": "dist/cli.js"
+    "meeting-vault": "dist/cli.js"
   },
   "scripts": {
     "start": "tsc && node dist/index.js",
@@ -20,15 +20,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/whjelmar/{{PROJECT_NAME}}.git"
+    "url": "https://github.com/whjelmar/meeting-vault.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/whjelmar/{{PROJECT_NAME}}/issues"
+    "url": "https://github.com/whjelmar/meeting-vault/issues"
   },
-  "homepage": "https://github.com/whjelmar/{{PROJECT_NAME}}#readme",
+  "homepage": "https://github.com/whjelmar/meeting-vault#readme",
   "devDependencies": {
     "@babel/core": "*",
     "@babel/preset-env": "*",

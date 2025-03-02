@@ -10,7 +10,7 @@ A command-line interface (CLI) framework is essential for building robust and us
 Use Commander.js as our primary CLI framework.
 
 ## Decision Made
-{{CURRENT_DATE}} by {{AUTHOR}}
+2025-03-01 by Walter Hjelmar
 
 ## Consequences
 Commander.js provides a straightforward and powerful solution for building CLI applications. It offers features such as option parsing, command handling, and automatic help generation, making it easier to create and maintain command-line tools.

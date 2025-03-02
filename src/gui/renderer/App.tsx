@@ -35,8 +35,8 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <h1>{{PROJECT_NAME}} GUI</h1>
-      {banner && <h2>Welcome to {{PROJECT_NAME}}</h2>}
+      <h1>meeting-vault GUI</h1>
+      {banner && <h2>Welcome to meeting-vault</h2>}
 
       <div>
         <label>

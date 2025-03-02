@@ -13,7 +13,7 @@ const config = {
       }
     },
     tracing: {
-      serviceName: '{{PROJECT_NAME}}'
+      serviceName: 'meeting-vault'
     },
     inputFile: '',
     outputFile: '',
